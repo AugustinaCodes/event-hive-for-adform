@@ -1,0 +1,31 @@
+@import "../../styles/variables.scss";
+
+.mobileLogo {
+    width: 42px;
+    cursor: pointer;
+    padding-left: 8px;
+}
+
+.desktopLogo {
+    display: none;
+}
+
+.hamburgerMenu {
+    display: flex;
+}
+
+@media (min-width: $breakpoint-desktop) {
+    .mobileLogo {
+        display: none;
+    }
+
+    .desktopLogo {
+        display: block;
+        width: 196px;
+        padding-left: 8px;
+    }
+
+    .hamburgerMenu {
+        display: none;
+    }
+}
