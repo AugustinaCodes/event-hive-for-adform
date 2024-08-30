@@ -1,7 +1,11 @@
+@import "../../styles/variables.scss";
+
 .logo {
-    width: 200px;
+    width: 150px;
+    margin-bottom: 10px;
 }
 
 .footer {
-    background-color: rgb(15, 3, 247);
+    background-color: $footer-color;
+    padding: 20px 0;
 }
