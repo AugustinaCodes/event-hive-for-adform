@@ -75,10 +75,10 @@ export default function NavigationBar() {
               </Button>
             </div>
           )}
-          <Button color="inherit" sx={{ fontWeight: "bold" }}>
+          <Button color="inherit" sx={{ fontWeight: "bold" }} onClick={() => navigate("/login")}>
             Login
           </Button>
-          <Button color="inherit" sx={{ fontWeight: "bold" }}>
+          <Button color="inherit" sx={{ fontWeight: "bold" }} onClick={() => navigate("/signup")}>
             Sign Up
           </Button>
           {!isDesktop && (
