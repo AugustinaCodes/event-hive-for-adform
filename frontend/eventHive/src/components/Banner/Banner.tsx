@@ -1,7 +1,14 @@
 import { Box, Button, Typography } from "@mui/material";
 import styles from "./Banner.module.scss";
+import { useNavigate } from "react-router-dom";
 
 export default function Banner() {
+
+const navigate = useNavigate();
+const handleExploreClick = () => {
+  navigate("/signup"); 
+};
+
   return (
     <Box className={styles.bannerContainer}>
       <Box className={styles.overlayText}>
@@ -12,7 +19,7 @@ export default function Banner() {
           Discover exclusive locations and events in cities worldwide. Book your
           visit now!
         </Typography>
-        <Button variant="contained">
+        <Button variant="contained" onClick={handleExploreClick}>
           Explore Now
         </Button>
       </Box>
